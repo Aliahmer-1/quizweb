@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="bgVideo">
+    <source src="video.mp4.mp4" type="video/mp4">
+    </video>
+    <div id="one">
+    <h1>Quiz Web page</h1>
+    <div id="quiz-container" style="display: none;">
+        <p id="question"> what is your name?</p>
+        <div id="options"></div>
+    </div>
+    <div id="nextbutten">
+        <button id="nextBtn" onclick="incrementQuestion()" disabled>Next</button>
+    </div>
+    <div id="nextbutten">
+        <button id="finishQuiz" onclick="finishQuiz()" style="display: none;">Finish</button>
+    </div>
+    
+    <div id="nextbutten">
+    <button id="restartQuiz" onclick="restartQuiz()" style="display: none;">Restart</button>
+    </div>
+    <div id="score1">
+        <p id="score" class="score">Score:0</p>
+    </div>
+
+    <div id="nextbutten">
+    <div id="result-container" class="score" style="display: none;">
+
+<p>you score: <span id="final-score"></span>/100 </p>
+    </div>
+</div>
+<div id="nextbutten">
+<p id="timer">time left: 20s</p>
+</div>
+
+<div id="nextbutten">
+<button id="startQuiz" onclick="startQuiz()">Start</button>
+</div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+#bgVideo{
+    position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+#one{
+    background-color: rgb(189, 248, 250);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+#sectionVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3; /* makes content readable */
+  border-radius: 10px;}
+
+  
+
+h1{
+ font-style: italic;
+  font-weight: bold; /* corrected */
+  font-size: 40px;
+  background: rgb(149, 225, 228);
+  border-radius: 8px;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px auto;
+  max-width: 90%; /* Responsive width */
+  text-align: center;
+  word-break: break-word;  /* breaks long words */
+  overflow-wrap: break-word; /* ensures breaking */
+  box-sizing: border-box;
+}
+
+#quiz-container{
+     max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#nextbutten{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nextBtn{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color: #eeeeee	;
+    border-radius: 5px;
+}
+
+#score1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color: #eeeeee	;
+    border-radius: 5px;
+
+}
+
+#finishQuiz{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+#restartQuiz{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color:#eeeeee	;
+    border-radius: 5px;
+}
+
+#startQuiz{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color:#eeeeee	;
+    border-radius: 5px;
+}
+/* #result-container{ */
+    /* font-style: ; */
+/* } */
+
+
+#timer{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:  20px;
+    background-color:#eeeeee	;
+    border-radius: 5px;
+}
+
+.option:hover {
+  background-color: #e0f7fa;}
+
+  @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    padding: 10px;
+    white-space: normal; /* ✅ allow text wrap */
+  }
+
+  #quiz-container {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .option {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #nextBtn,
+  #finishQuiz,
+  #restartQuiz,
+  #startQuiz,
+  #timer,
+  .score {
+    font-size: 16px;
+    margin: 10px auto;}
+  }
